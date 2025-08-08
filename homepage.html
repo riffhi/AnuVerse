@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Bestie, Anita </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF0F5; /* Lavender Blush */
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F9A8D4' fill-opacity='0.2'%3E%3Cpath d='M36 34.094L36 44v1h-2v-1-9.906L14 14.094V4v-1h2v1v9.906L36 34.094z M44 44h10v1H44v-1z M44 4h10v1H44v-1z M24 4h1v10h-1V4z M14 4h1v10h-1V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Custom styles for the bubbly/cloudy effect */
+        .bubbly-section {
+            background-color: #FFFFFF;
+            border: 3px solid #FBCFE8; /* Pink 200 */
+            border-radius: 45px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        
+        .gallery-title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 
+                -3px -3px 0 #F472B6,  
+                 3px -3px 0 #F472B6,
+                -3px  3px 0 #F472B6,
+                 3px  3px 0 #F472B6,
+                -4px -4px 0 #BE185D,
+                 4px -4px 0 #BE185D,
+                -4px  4px 0 #BE185D,
+                 4px  4px 0 #BE185D;
+        }
+
+        /* Tic Tac Toe styles */
+        .tic-tac-toe-board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: #FFF0F5;
+            border: 2px dashed #FBCFE8;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #EC4899;
+        }
+        .cell:hover {
+            background-color: #FCE7F3;
+            transform: scale(1.05);
+        }
+
+        /* Nav styles */
+        nav a {
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #EC4899; /* Pink 500 */
+            border-bottom: 2px solid #EC4899;
+        }
+        
+        /* Voucher styles */
+        .voucher {
+            background-color: #FDF2F8; /* Pink 50 */
+            border-left: 8px dotted #FBCFE8; /* Pink 200 */
+            transition: transform 0.2s ease-in-out;
+        }
+        .voucher:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Navigation -->
+    <nav class="bg-white/70 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-center items-center flex-wrap space-x-4 md:space-x-8">
+            <a href="#home" class="font-bold text-lg text-pink-500">Home</a>
+            <a href="#about" class="font-bold text-lg text-pink-500">About Her</a>
+            <a href="#gallery" class="font-bold text-lg text-pink-500">Our Gallery</a>
+            <a href="#vouchers" class="font-bold text-lg text-pink-500">Vouchers</a>
+            <a href="#games" class="font-bold text-lg text-pink-500">Cute Game</a>
+            <a href="#letters" class="font-bold text-lg text-pink-500">Letters</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Home Section -->
+        <section id="home" class="text-center pt-20 pb-10">
+            <div class="relative inline-block mb-8">
+                <div class="absolute -inset-2 bg-pink-300 rounded-full blur-xl opacity-50"></div>
+                <!-- To add your main photo, replace the src in the img tag below -->
+                <img src="AnuVerse/main2.jpg" alt="Anita and Best Friend" class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-8 border-white shadow-lg">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-pink-600">For the Bestest Friend,</h1>
+            <h2 class="text-5xl md:text-7xl font-bold text-pink-400 mt-2">Anita</h2>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600">Siince i cant come regularly, im sending this token of love in my place</p>
+        </section>
+        
+        <!-- About Her Section -->
+        <section id="about" class="bubbly-section p-8 md:p-12 text-center my-10">
+             <h2 class="text-4xl md:text-5xl font-bold text-pink-600 mb-6">A Little About My Favorite Person</h2>
+             <div class="max-w-3xl mx-auto text-gray-600 text-lg space-y-4">
+                <p>
+                    This is for the girl who can get lost in a good BL series for hours, and whose passion for SEEING BOYS MAKING OUT is as big as her heart. I know we can't meet as often as we'd like, and I'm so sorry that I can't always give you the time you deserve. Please know that I'm always thinking of you.
+                </p>
+                <p>
+                    I am endlessly proud of you for everything. You already have become the best version of yourself yet and i know this growth wont stop now! You're brilliant and strong, and yes, maybe a little short-tempered sometimes 😉, but that's all part of the amazing person you are. 
+                </p>
+             </div>
+        </section>
+
+        <!-- Cloud Separator -->
+        <div class="w-full h-20 bg-no-repeat bg-center bg-cover" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23ffffff%22 fill-opacity=%221%22 d=%22M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,149.3C672,128,768,128,864,149.3C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z%22%3E%3C/path%3E%3C/svg%3E'); transform: rotate(180deg);"></div>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="bubbly-section p-8 md:p-12 text-center -mt-10">
+             <h2 class="gallery-title mb-12">Beauty</h2>
+            <p class="text-gray-500 mb-12 -mt-8">Just in case you forgot how beautiful you are, let me remind you</p>
+            <!-- To add your photos, replace the image URLs in the style attributes below -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="h-48 md:h-64 bg-cover bg-center rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-300" style="background-image: url('/AnuVerse/anu1.jpg')"></div>
+                <div class="h-48 md:h-64 bg-cover bg-center rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-300 md:mt-8" style="background-image: url('/AnuVerse/anu2.jpg')"></div>
+                <div class="h-48 md:h-64 bg-cover bg-center rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-300" style="background-image: url('/AnuVerse/anu3.jpg')"></div>
+                <div class="h-48 md:h-64 bg-cover bg-center rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-300 md:mt-8" style="background-image: url('/AnuVerse/anu4.jpg')"></div>
+            </div>
+        </section>
+        
+        <!-- Vouchers Section -->
+        <section id="vouchers" class="py-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-pink-600 mb-4">Friendship Vouchers</h2>
+            <p class="text-gray-500 mb-10 max-w-2xl mx-auto">A little book of promises for my bestie. To be redeemed whenever you want!</p>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <!-- Voucher 1 -->
+                <div class="voucher p-6 rounded-2xl shadow-md text-left flex items-center space-x-6">
+                    <div class="text-5xl">🎟️</div>
+                    <div>
+                        <h3 class="font-bold text-xl text-pink-500">One Movie Night</h3>
+                        <p class="text-gray-600">Your choice of movie (even if it's a BL). Valid forever.</p>
+                    </div>
+                </div>
+                <!-- Voucher 2 -->
+                <div class="voucher p-6 rounded-2xl shadow-md text-left flex items-center space-x-6">
+                    <div class="text-5xl">💌</div>
+                    <div>
+                        <h3 class="font-bold text-xl text-pink-500">Uninterrupted Vent Session</h3>
+                        <p class="text-gray-600">I'll drop everything and listen. No judgments, just support.</p>
+                    </div>
+                </div>
+                <!-- Voucher 3 -->
+                <div class="voucher p-6 rounded-2xl shadow-md text-left flex items-center space-x-6">
+                    <div class="text-5xl">🤗</div>
+                    <div>
+                        <h3 class="font-bold text-xl text-pink-500">One Immediate Hangout</h3>
+                        <p class="text-gray-600">Redeemable on our next meeting. Valid for only one time</p>
+                    </div>
+                </div>
+                <!-- Voucher 4 -->
+                <div class="voucher p-6 rounded-2xl shadow-md text-left flex items-center space-x-6">
+                    <div class="text-5xl">💖</div>
+                    <div>
+                        <h3 class="font-bold text-xl text-pink-500">A Get Out of an Argument Free Card</h3>
+                        <p class="text-gray-600">For when you're feeling short-tempered. Play this card and we'll just smile and move on.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section id="games" class="py-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-pink-600 mb-4">A Little Game Break</h2>
+            <p class="text-gray-500 mb-8">Let's play Tic-Tac-Toe! You are ❤️</p>
+            <div class="inline-block p-6 bg-white/50 rounded-3xl shadow-md">
+                <div id="game-board" class="tic-tac-toe-board">
+                    <!-- Cells will be generated by JavaScript -->
+                </div>
+                <p id="game-status" class="mt-4 text-xl font-semibold text-pink-500 h-8"></p>
+                <button id="reset-button" class="mt-4 px-6 py-2 bg-pink-500 text-white font-bold rounded-full shadow-lg hover:bg-pink-600 transition-colors">Play Again</button>
+            </div>
+        </section>
+        
+        <!-- Letters Section -->
+        <section id="letters" class="bubbly-section p-8 md:p-12 mb-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-pink-600 text-center mb-10">Letters For You</h2>
+            <div class="space-y-8">
+                <!-- Letter 1 -->
+                <div class="bg-pink-50 p-6 rounded-2xl shadow-sm border-l-4 border-pink-300">
+                    <h3 class="font-bold text-xl text-pink-500 mb-2">To my human,</h3>
+                    <!-- Edit the text below! -->
+                    <p class="text-gray-600">I cant express how grateful i am to have you. Cheers to many more years of friendship ahead!</p>
+                    <p class="text-right mt-4 font-bold text-pink-400">- Your Bestie</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="text-center p-6 bg-white/50">
+        <p class="text-pink-400">Made with lots of ❤️ for the one and only Anita.</p>
+    </footer>
+
+    <script>
+        // --- Tic Tac Toe Game Logic ---
+        const board = document.getElementById('game-board');
+        const statusDisplay = document.getElementById('game-status');
+        const resetButton = document.getElementById('reset-button');
+        const cells = [];
+
+        let currentPlayer = '❤️';
+        let gameActive = true;
+        let gameState = ["", "", "", "", "", "", "", "", ""];
+
+        const winningConditions = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+
+        function handleCellPlayed(clickedCell, clickedCellIndex) {
+            gameState[clickedCellIndex] = currentPlayer;
+            clickedCell.innerHTML = currentPlayer;
+        }
+
+        function handlePlayerChange() {
+            currentPlayer = currentPlayer === '❤️' ? '⭐' : '❤️';
+            statusDisplay.innerHTML = `${currentPlayer}'s Turn`;
+        }
+
+        function handleResultValidation() {
+            let roundWon = false;
+            for (let i = 0; i < winningConditions.length; i++) {
+                const winCondition = winningConditions[i];
+                let a = gameState[winCondition[0]];
+                let b = gameState[winCondition[1]];
+                let c = gameState[winCondition[2]];
+                if (a === '' || b === '' || c === '') {
+                    continue;
+                }
+                if (a === b && b === c) {
+                    roundWon = true;
+                    break;
+                }
+            }
+
+            if (roundWon) {
+                statusDisplay.innerHTML = `Player ${currentPlayer} has won! 🎉`;
+                gameActive = false;
+                return;
+            }
+
+            let roundDraw = !gameState.includes("");
+            if (roundDraw) {
+                statusDisplay.innerHTML = `It's a draw! 🤝`;
+                gameActive = false;
+                return;
+            }
+
+            handlePlayerChange();
+        }
+
+        function handleCellClick(event) {
+            const clickedCell = event.target;
+            const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+
+            if (gameState[clickedCellIndex] !== "" || !gameActive) {
+                return;
+            }
+
+            handleCellPlayed(clickedCell, clickedCellIndex);
+            handleResultValidation();
+        }
+
+        function handleRestartGame() {
+            gameActive = true;
+            currentPlayer = '❤️';
+            gameState = ["", "", "", "", "", "", "", "", ""];
+            statusDisplay.innerHTML = `${currentPlayer}'s Turn`;
+            cells.forEach(cell => cell.innerHTML = "");
+        }
+        
+        function initializeGame() {
+            board.innerHTML = ''; // Clear board before creating
+            for(let i = 0; i < 9; i++) {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                cell.setAttribute('data-cell-index', i);
+                cell.addEventListener('click', handleCellClick);
+                board.appendChild(cell);
+                cells[i] = cell;
+            }
+            handleRestartGame();
+        }
+
+        resetButton.addEventListener('click', handleRestartGame);
+        
+        initializeGame();
+
+        // --- Smooth Scrolling ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
